@@ -1,0 +1,1387 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+/******************************************Header*******************************************/
+
+header {
+  background-color: #0d0d2b;
+  background-image: url(img/bg_1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 0 120px;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  color: #fff;
+}
+header .top a {
+  color: #fff;
+}
+header .top .logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .top a.logo {
+  font-family: 'Inter', sans-serif;
+  /* font-size: 18px; */
+  font-size: calc(14px + 4 * (100vw / 1440));
+  text-decoration: none;
+}
+header .top a.logo span {
+  margin-left: 16px;
+}
+header .top ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 62.3%;
+  list-style-type: none;
+}
+header .top ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 32px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition-property: border-bottom;
+  transition-duration: 0.5s;
+}
+header .top ul li a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+header .top .signIn {
+  display: flex;
+  justify-content: center;
+  flex-basis: 18.4%;
+  margin-left: 56px;
+}
+header .top .signIn .box_1 {
+  border-right: 1px solid #f2f2f2;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+header .top .signIn .box_1 a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition-property: border-bottom;
+  transition-duration: 0.5s;
+}
+header .top .signIn .box_1 a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+header .top .signIn .box_2 {
+  padding-left: 24px;
+}
+header .top .signIn .box_2 a {
+  border: 1.5px solid rgb(54, 114, 233);
+  border-radius: 32px;
+  background-color: rgb(54, 114, 233);
+  padding: 14px 32px;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+header .top .signIn .box_2 a:hover {
+  background-color: #0d0d2b;
+}
+
+header .prop {
+  display: flex;
+}
+header .prop .prop_img {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+}
+header .prop .prop_img img {
+  margin: 51px auto 102px auto;
+  object-fit: cover;
+}
+header .prop .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 131px;
+  margin-bottom: 139px;
+  flex-basis: 50%;
+}
+header .prop .info span {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #252540;
+  border: 1px solid #252540;
+  border-radius: 32px;
+}
+header .prop .info span p {
+  color: #fff;
+  margin: auto 16px;
+  display: none;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+}
+header .prop .info span a.save {
+  display: flex;
+  font-size: 16px;
+  text-decoration: none;
+  color: #0d0d2b;
+  padding: 4px 16px;
+  margin: 4px;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  background-color: #fff;
+  font-weight: 500;
+}
+header .prop .info span a.save:hover ~ p {
+  display: flex;
+}
+header .prop .info h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 24px auto;
+}
+header .prop .info p {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 400;
+}
+header .prop .info a {
+  display: flex;
+  border: 1px solid #3671e9;
+  border-radius: 32px;
+  background-color: #3671e9;
+  text-decoration: none;
+  margin-top: 32px;
+}
+header .prop .info a:hover img {
+  transform: rotate(360deg);
+}
+header .prop .info a span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin: 18px 24px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid rgba(255, 255, 255, 0);
+}
+header .prop .info a button {
+  background: none;
+  border: none;
+  padding: 0;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+header .prop .info a button img {
+  margin: 16px 16px 16px 0;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+/********************************************Why********************************************/
+
+section.why {
+  margin-top: -1px;
+  padding: 100px 120px;
+  background-color: #0d0d2b;
+  background-image: url(img/bg_2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+section.why .numbers {
+  display: flex;
+  justify-content: space-between;
+}
+section.why .numbers .cont {
+  display: flex;
+}
+section.why .numbers .cont .text {
+  margin-left: 24px;
+}
+section.why .numbers .cont .text h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+section.why .numbers .cont .text p {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.why .quest {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+}
+section.why .quest .info_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 70px;
+}
+section.why .quest .info_1 h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+section.why .quest .info_1 p {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 400;
+  width: 85%;
+  margin-bottom: 32px;
+}
+section.why .quest .info_1 a.but {
+  display: flex;
+  justify-content: center;
+  background-color: #3671e9;
+  border: 1px solid #3671e9;
+  border-radius: 32px;
+  padding: 16px 24px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition-property: background-color, padding;
+  transition-duration: 0.5s;
+}
+section.why .quest .info_1 a.but:hover {
+  background-color: #0d0d2b;
+  padding: 10px 30px;
+}
+
+/*******************************************Trade*******************************************/
+
+section.trade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #0d0d2b 31%, #f9fafe 31%, #f9fafe 69%);
+  margin-top: -1px;
+}
+section.trade .text_1 {
+  text-align: center;
+  margin: 100px 350px 64px 350px;
+}
+section.trade .text_1 h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+section.trade .text_1 p {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 60px;
+}
+
+section.trade .calculate {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  background-color: #fff;
+  filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+}
+section.trade .calculate .in {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+section.trade .calculate .in input {
+  color: #0d0d2b;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 62px 0;
+  flex-basis: 42%;
+}
+section.trade .calculate .in input:focus {
+  outline: none;
+}
+section.trade .calculate .in select {
+  color: #0d0d2b;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 62px 0;
+  flex-basis: 21%;
+}
+section.trade .calculate .in button {
+  margin: 48px 0;
+  flex-basis: 15.6%;
+  background: #3671e9;
+  border-radius: 32px;
+  border: 1px solid #3671e9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+section.trade .calculate .in button:hover {
+  background: #fff;
+  border: 1px solid #3671e9;
+  color: #3671e9;
+}
+section.trade .calculate .out {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-left: 48px;
+}
+section.trade .calculate .out .end {
+  color: #3671e9;
+  font-weight: 500;
+  margin: 48px 0 16px 0;
+}
+section.trade .calculate .out span {
+  color: #0d0d2b;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  margin-bottom: 4px;
+}
+section.trade .calculate .out p {
+  color: #828282;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+section.trade .crypto_cur {
+  padding: 100px 120px;
+}
+section.trade .crypto_cur h2 {
+  color: #0d0d2b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  margin: 0 230px;
+}
+section.trade .crypto_cur .three_coin {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px auto 0 auto;
+}
+section.trade .crypto_cur .three_coin .valute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+  flex-basis: 31%;
+  transition-property: all;
+  transition-duration: 1s;
+}
+section.trade .crypto_cur .three_coin .valute:hover {
+  background-color: #2b076e;
+}
+section.trade .crypto_cur .three_coin .valute:hover h3 {
+  color: #fff;
+}
+section.trade .crypto_cur .three_coin .valute:hover p {
+  color: #fff;
+}
+section.trade .crypto_cur .three_coin .valute:hover button a {
+  display: flex;
+}
+section.trade .crypto_cur .three_coin .valute:hover button img[alt='arrow'] {
+  display: none;
+}
+section.trade .crypto_cur .three_coin .valute img {
+  margin: 48px auto;
+}
+section.trade .crypto_cur .three_coin .valute h3 {
+  display: flex;
+  text-align: center;
+  color: #0d0d2b;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+}
+section.trade .crypto_cur .three_coin .valute h3 span {
+  font-weight: 500;
+  font-size: 18px;
+  color: #bdbdbd;
+  margin-left: 8px;
+}
+section.trade .crypto_cur .three_coin .valute p {
+  text-align: center;
+  color: #828282;
+  margin: 16px 24px 25px 24px;
+}
+section.trade .crypto_cur .three_coin .valute button {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  background: none;
+  margin: 25px auto 48px auto;
+}
+section.trade .crypto_cur .three_coin .valute button a {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #3671e9;
+  border-radius: 32px;
+  background-color: #3671e9;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+}
+section.trade .crypto_cur .three_coin .valute button a:hover img {
+  transform: rotate(360deg);
+}
+section.trade .crypto_cur .three_coin .valute button a span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 18px 24px;
+}
+section.trade .crypto_cur .three_coin .valute button a img {
+  margin: 15px 16px 15px 0;
+  transform: rotate(0deg);
+  transition-property: all;
+  transition-duration: 1s;
+}
+section.trade .crypto_cur .three_coin .valute button img {
+  margin: 0 auto;
+}
+
+/*******************************************Features*******************************************/
+
+section.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2b076e;
+  background-image: url(img/bg_3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 100px 120px;
+}
+section.features h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  margin: 0 151px 100px 151px;
+}
+section.features .blocks {
+  display: flex;
+}
+section.features .blocks .text1,
+section.features .blocks_rev .text2,
+section.features .blocks .text3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 100px 0 0;
+}
+section.features .blocks .text1 h3,
+section.features .blocks_rev .text2 h3,
+section.features .blocks .text3 h3 {
+  margin-bottom: 24px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+}
+section.features .blocks .text1 p,
+section.features .blocks_rev .text2 p,
+section.features .blocks .text3 p {
+  margin-right: 46px;
+  color: #e0e0e0;
+  line-height: 28px;
+}
+section.features .blocks .text1 a,
+section.features .blocks_rev .text2 a,
+section.features .blocks .text3 a {
+  margin-top: 32px;
+  border: 2px solid #3671e9;
+  border-radius: 32px;
+  background-color: #3671e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+section.features .blocks .text1 a:hover,
+section.features .blocks_rev .text2 a:hover,
+section.features .blocks .text3 a:hover {
+  background-color: #2b076e;
+}
+section.features .blocks_rev {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 120px 0;
+}
+section.features .blocks_rev .text2 {
+  margin: 0 0 0 100px;
+  justify-content: center;
+}
+section.features .blocks .text3 {
+  margin: 0;
+}
+
+/*******************************************Form********************************************/
+
+section.start {
+  padding: 88px 120px;
+  background: url(img/bg_4.png), linear-gradient(to bottom, #2b076e, #0d0d2b);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: -1px;
+}
+section.start .mining {
+  padding: 48px;
+  background-color: #3671e9;
+  background-image: url(img/bg_5.png);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.start .mining .text_min {
+  width: 42%;
+  margin-right: 37px;
+}
+section.start .mining .text_min h3 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 16px;
+}
+section.start .mining .text_min p {
+  width: 74%;
+  line-height: 28px;
+  color: #fff;
+}
+section.start .mining form {
+  display: flex;
+  justify-content: flex-end;
+  width: 58%;
+}
+section.start .mining form input {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0 40px 0 0;
+  background: none;
+  width: 66%;
+}
+section.start .mining form input:focus {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+section.start .mining form a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 32px;
+  background: #fff;
+  border-radius: 32px;
+  text-decoration: none;
+  color: #0d0d2b;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition-property: background, color, border;
+  transition-duration: 0.5s;
+}
+section.start .mining form a:hover {
+  background: #3671e9;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/*******************************************Footer******************************************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d2b;
+  color: #fff;
+  padding: 80px 120px;
+  margin-top: -1px;
+}
+footer .up {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .up a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+footer .up a:hover {
+  transform: scale(0.95);
+}
+footer .up a span {
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+footer .up .nuv {
+  display: flex;
+  flex-direction: column;
+}
+footer .up .nuv h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+footer .up .nuv ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .up .nuv ul li {
+  color: #f2f2f2;
+  font-weight: 400;
+  line-height: 38px;
+}
+footer .up .pay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 26%;
+}
+footer .up .pay h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+footer .up .pay .card {
+  display: flex;
+  justify-content: space-between;
+}
+footer .up .pay .card button {
+  margin-right: 24px;
+  width: 96px;
+  height: 64px;
+  border: 1px solid #171734;
+  border-radius: 8px;
+  background-color: #171734;
+  cursor: pointer;
+}
+footer .up .pay .card button:hover img {
+  transform: scale(1.1);
+}
+footer .up .pay .card button img {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+footer .down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+footer .down .socials a {
+  margin-left: 32px;
+}
+footer .down .socials a img {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+footer .down .socials a img:hover {
+  transform: scale(1.2);
+}
+.menu-burger__header {
+  display: none;
+}
+
+/*******************************************Adaptive******************************************/
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  header {
+    padding: 0 100px;
+  }
+  header .prop .info h1 {
+    color: #fff;
+    font-size: 46px;
+    margin: 24px auto;
+  }
+  section.why,
+  section.trade .crypto_cur {
+    padding: 100px 100px;
+  }
+  section.why .numbers .cont .text h2 {
+    font-size: 36px;
+  }
+  section.why .quest .info_1 {
+    margin-left: 60px;
+  }
+  section.why .quest .info_1 h2 {
+    font-size: 36px;
+  }
+  section.features {
+    background-position: center;
+    background-size: cover;
+    padding: 100px 100px;
+  }
+  section.features .blocks_rev .text2 {
+    margin: 0 0 0 100px;
+  }
+  section.features .blocks_rev .text2 p,
+  section.features .blocks .text3 p {
+    margin-right: 0;
+  }
+  section.features .blocks img[src='img/image_3.png'] {
+    width: 74%;
+  }
+  section.start {
+    padding: 88px 100px;
+    background-size: contain;
+  }
+  section.start .mining {
+    background-size: contain;
+  }
+  footer {
+    padding: 80px 100px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  header {
+    padding: 0 60px 60px 60px;
+  }
+  header .prop .info {
+    margin-top: 110px;
+    margin-bottom: 0;
+  }
+  header .prop .prop_img {
+    flex-basis: auto;
+  }
+  header .prop .prop_img img {
+    margin: 50px 0 0 0;
+    object-fit: contain;
+    width: 100%;
+  }
+  header .prop .info h1 {
+    font-size: 36px;
+    margin: 20px auto;
+  }
+  header .prop .info span p {
+    margin: auto 10px;
+  }
+  header .prop .info a {
+    margin-top: 25px;
+  }
+  header .prop .info a button img {
+    margin: 10px 16px 10px 0;
+  }
+  section.why,
+  section.trade .crypto_cur,
+  section.features,
+  section.start {
+    padding: 60px;
+  }
+  section.why .quest {
+    margin-top: 70px;
+  }
+  section.why .numbers .cont .text {
+    margin-left: 20px;
+  }
+  section.why .numbers .cont .text h2 {
+    font-size: 32px;
+  }
+  section.why .numbers .cont .text p {
+    font-size: 14px;
+  }
+  section.why .quest img[src='img/Illustration_1.png'] {
+    width: 60%;
+  }
+  section.trade {
+    background: linear-gradient(
+      to bottom,
+      #0d0d2b 33%,
+      #f9fafe 33%,
+      #f9fafe 67%
+    );
+  }
+  section.trade .text_1 {
+    margin: 100px 150px 70px 150px;
+  }
+  section.trade .calculate {
+    width: 90%;
+  }
+  section.trade .calculate .in input {
+    margin: 50px 0;
+  }
+  section.trade .calculate .in select {
+    margin: 50px 0;
+  }
+  section.trade .calculate .in button {
+    margin: 38px 0;
+  }
+  section.trade .crypto_cur h2 {
+    margin: 0 80px;
+  }
+  section.trade .calculate .out {
+    margin-left: 33px;
+  }
+  section.trade .crypto_cur .three_coin .valute img {
+    margin: 30px auto;
+  }
+  section.trade .crypto_cur .three_coin .valute button {
+    margin: 25px auto 40px auto;
+  }
+  section.trade .calculate .out .end {
+    margin: 10px 0 0 0;
+  }
+  section.trade .calculate .out p {
+    margin-bottom: 40px;
+  }
+  section.features h2 {
+    margin: 0 100px 50px 100px;
+  }
+  section.features .blocks .text1 {
+    margin: 20px 20px 0 0;
+  }
+  section.features .blocks_rev .text2 {
+    margin-left: 40px;
+  }
+  section.features .blocks_rev img[src='img/image_2.png'] {
+    width: 70%;
+  }
+  section.features .blocks img[src='img/image_3.png'] {
+    width: 62%;
+  }
+  section.start .mining .text_min p {
+    width: 100%;
+  }
+  footer {
+    padding: 60px 60px 20px 60px;
+  }
+  footer .up .nuv h4 {
+    margin-bottom: 10px;
+  }
+  footer .up .nuv ul li {
+    line-height: 30px;
+  }
+  footer .up .pay h3 {
+    margin-bottom: 25px;
+  }
+  footer .down {
+    margin-top: 100px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  header {
+    padding: 0 30px 40px 30px;
+  }
+  header .top {
+    padding-top: 30px;
+  }
+  .menu-burger__header {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: block;
+    cursor: pointer;
+  }
+  .menu-burger__header span,
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    margin: 0 auto;
+  }
+  .menu-burger__header span {
+    top: 16px;
+  }
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    content: '';
+  }
+  .menu-burger__header:after {
+    bottom: 5px;
+  }
+  .menu-burger__header:before {
+    top: 5px;
+  }
+  .menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .menu-burger__header.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+  }
+  .menu-burger__header.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+  }
+  .header__nav {
+    display: flex;
+    background-color: #171734;
+    position: fixed;
+    width: 100%;
+    right: -100%;
+    top: 100px;
+    transition-property: right;
+    transition-duration: 0.5s;
+    justify-content: flex-end;
+  }
+  .header__nav.open-menu {
+    right: 0%;
+    position: absolute;
+    justify-content: flex-end;
+  }
+  header .top ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: 0;
+    list-style-type: none;
+    margin-right: 10px;
+  }
+  header .top ul li {
+    margin: 10px 0;
+  }
+  header .top ul li a {
+    font-size: 20px;
+  }
+  header .top .signIn {
+    display: flex;
+    justify-content: center;
+    flex-basis: 0;
+    margin-left: 0;
+  }
+  header .prop .prop_img {
+    flex-basis: 50%;
+  }
+  header .prop .info {
+    margin-top: 80px;
+  }
+  header .prop .info h1 {
+    font-size: 30px;
+    margin: 10px auto;
+  }
+  header .prop .info p {
+    font-size: 14px;
+  }
+  header .prop .info a {
+    margin-top: 20px;
+  }
+  header .prop .info a span {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 18px 20px;
+  }
+  header .prop .info a button img {
+    margin: 5px 16px 5px 0;
+  }
+  header .prop .info span a.save {
+    font-size: 14px;
+  }
+  header .prop .info span p {
+    font-size: 14px;
+  }
+  section.why,
+  section.trade .crypto_cur,
+  section.features,
+  section.start {
+    padding: 40px 30px;
+  }
+  section.why .numbers .cont img {
+    width: 60px;
+  }
+  section.why .numbers .cont .text h2 {
+    font-size: 26px;
+  }
+  section.why .numbers .cont .text p {
+    font-size: 13px;
+  }
+  section.why .quest {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  section.why .quest .info_1 {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  section.why .quest .info_1 a.but {
+    font-size: 16px;
+  }
+  section.why .quest .info_1 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  section.why .quest .info_1 p {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.trade .text_1 {
+    margin: 40px 50px;
+  }
+  section.trade .text_1 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  section.trade .crypto_cur h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+  section.trade .crypto_cur .three_coin {
+    margin: 30px auto 0 auto;
+  }
+  section.trade .crypto_cur .three_coin .valute img {
+    margin: 20px auto;
+    width: 70px;
+  }
+  section.trade .crypto_cur .three_coin .valute h3 {
+    font-size: 26px;
+  }
+  section.trade .crypto_cur .three_coin .valute h3 span {
+    font-size: 14px;
+  }
+  section.trade .crypto_cur .three_coin .valute p {
+    margin: 0;
+  }
+  section.trade .crypto_cur .three_coin .valute button {
+    margin: 20px auto;
+  }
+  section.features h2 {
+    margin: 0 auto 60px auto;
+  }
+  section.features h2 {
+    font-size: 30px;
+  }
+  section.features .blocks {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  section.features .blocks img[src='img/image_1.png'] {
+    width: 70%;
+    object-fit: contain;
+  }
+  section.features .blocks .text1,
+  section.features .blocks_rev .text2,
+  section.features .blocks .text3 {
+    margin: 20px 0 0 0;
+    align-items: center;
+    text-align: center;
+  }
+  section.features .blocks .text1 h3,
+  section.features .blocks_rev .text2 h3,
+  section.features .blocks .text3 h3 {
+    margin-bottom: 10px;
+  }
+  section.features .blocks .text1 p,
+  section.features .blocks_rev .text2 p,
+  section.features .blocks .text3 p {
+    margin-right: 0;
+  }
+  section.features .blocks .text1 a,
+  section.features .blocks_rev .text2 a,
+  section.features .blocks .text3 a {
+    margin-top: 10px;
+    padding: 10px 25px;
+  }
+  section.features .blocks_rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 80px 0;
+    align-items: center;
+  }
+  section.features .blocks img[src='img/image_3.png'] {
+    width: 80%;
+  }
+  section.start .mining {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  section.start .mining .text_min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section.start .mining .text_min h3 {
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 0px;
+  }
+  section.start .mining .text_min p {
+    width: auto;
+  }
+  section.start .mining form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  section.start .mining form a {
+    padding: 10px 28px;
+  }
+  footer .up .nuv {
+    display: none;
+  }
+  footer .up .pay h3 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 120%;
+  }
+  footer .up .pay .card button {
+    margin-right: 24px;
+    width: 90px;
+    height: auto;
+  }
+  footer {
+    padding: 30px 30px 20px 30px;
+  }
+  footer .down {
+    margin-top: 50px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header .top .signIn {
+    display: none;
+  }
+  header .top {
+    justify-content: space-between;
+  }
+  section.why .numbers {
+    flex-wrap: wrap;
+  }
+  section.trade .calculate .in {
+    flex-wrap: wrap;
+  }
+  section.trade .crypto_cur .three_coin {
+    flex-wrap: wrap;
+  }
+  footer .up {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .up .pay .card {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section.trade .crypto_cur h2 {
+    font-size: 20px;
+  }
+  header .prop {
+    flex-direction: column-reverse;
+  }
+  header .prop .prop_img img {
+    margin: 20px 0 0 0;
+    width: 80%;
+  }
+  section.why .numbers .cont {
+    margin-bottom: 20px;
+  }
+  section.trade .text_1 {
+    margin: 40px 30px;
+  }
+  section.why .quest img[src='img/Illustration_1.png'] {
+    width: 100%;
+  }
+  header .prop .info h1,
+  section.why .quest .info_1 h2,
+  section.trade .text_1 h2,
+  section.features h2 {
+    font-size: 26px;
+  }
+  section.trade .text_1 p {
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 0px;
+  }
+  section.trade .calculate .in input,
+  section.trade .calculate .in select {
+    margin: 30px 0;
+  }
+  section.trade .calculate .in select {
+    flex-basis: 40%;
+  }
+  section.trade .calculate .in button {
+    margin: 26px 0;
+  }
+  section.trade .calculate .out {
+    margin-left: 0;
+    margin: 0 20px;
+  }
+  section.trade .calculate .out span {
+    font-size: 30px;
+    line-height: 130%;
+  }
+  section.trade .calculate .out .end {
+    font-weight: 400;
+  }
+  section.trade .calculate .out p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  section.trade .crypto_cur .three_coin .valute {
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+  section.trade {
+    background: linear-gradient(
+      to bottom,
+      #0d0d2b 20%,
+      #f9fafe 20%,
+      #f9fafe 80%
+    );
+  }
+  header .prop .info {
+    margin-top: 40px;
+  }
+  section.features .blocks img[src='img/image_1.png'],
+  section.features .blocks_rev img[src='img/image_2.png'],
+  section.features .blocks img[src='img/image_3.png'] {
+    width: 100%;
+  }
+  section.features .blocks .text1 h3,
+  section.features .blocks_rev .text2 h3,
+  section.features .blocks .text3 h3 {
+    font-size: 26px;
+    line-height: 130%;
+  }
+  header .prop .info a span {
+    font-size: 14px;
+    margin: 10px 15px;
+  }
+  header .prop .info a button img {
+    margin: 5px 10px 5px 0;
+    width: 28px;
+  }
+  section.why .quest .info_1 a.but {
+    font-size: 14px;
+  }
+  section.trade .crypto_cur .three_coin .valute img {
+    width: 50px;
+  }
+  section.trade .crypto_cur .three_coin .valute button a img {
+    margin: 11px 16px 11px 0;
+    width: 26px;
+  }
+  section.trade .crypto_cur .three_coin .valute button a span {
+    font-size: 16px;
+    margin: 10px 20px;
+  }
+  section.features .blocks .text1 a,
+  section.features .blocks_rev .text2 a,
+  section.features .blocks .text3 a {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  section.start .mining .text_min h3 {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 0px;
+  }
+  section.start .mining .text_min p {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  section.start .mining form {
+    flex-direction: column;
+  }
+  section.start .mining form input {
+    font-size: 16px;
+    margin: 0 0 0 0;
+    width: auto;
+  }
+  section.start .mining form a {
+    margin-top: 15px;
+    padding: 8px 20px;
+  }
+  section.start .mining .text_min {
+    margin-bottom: 15px;
+  }
+  footer .up .pay {
+    flex-direction: column;
+    flex-basis: auto;
+    margin-top: 20px;
+    align-items: initial;
+  }
+  footer .up .pay h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  footer .up .pay .card button {
+    margin-right: 0;
+    width: 90px;
+    height: 58px;
+    margin-top: 20px;
+  }
+  footer .down {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  footer .down .socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  footer .down .socials a {
+    margin-left: 0;
+  }
+}

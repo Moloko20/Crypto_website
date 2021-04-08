@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crappo</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="main">
+      <article class="top">
+        <a href="#main" class="logo">
+          <img src="img/logo.png" alt="logo" />
+          <span>CRAPPO</span>
+        </a>
+        <div class="header__nav">
+          <ul class="header__menu">
+            <li>
+              <a href="#products"> Products</a>
+            </li>
+            <li>
+              <a href="#features"> Features</a>
+            </li>
+            <li>
+              <a href="#aboutUs"> About</a>
+            </li>
+            <li>
+              <a href="#contact"> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="signIn">
+          <div class="box_1">
+            <a href="">Login</a>
+          </div>
+          <div class="box_2">
+            <a href="">Register</a>
+          </div>
+        </div>
+        <div class="menu-burger__header">
+          <span></span>
+        </div>
+      </article>
+
+      <article class="prop">
+        <div class="info">
+          <span>
+            <a href="" class="save">75% SAVE</a>
+            <p>For the Black Friday weekend</p>
+          </span>
+          <h1>Fastest & secure platform to invest in crypto</h1>
+          <p>
+            Buy and sell cryptocurrencies, trusted by 10M wallets with over $30
+            billion in transactions.
+          </p>
+          <a href="">
+            <span>Try for FREE</span>
+            <button><img src="img/icon_1.png" alt="arrow" /></button>
+          </a>
+        </div>
+        <div class="prop_img">
+          <img src="img/Illustration.png" alt="bitcoin" />
+        </div>
+      </article>
+    </header>
+
+    <section class="why" id="aboutUs">
+      <div class="numbers">
+        <div class="cont">
+          <img src="img/icon_2.svg" alt="icon" />
+          <div class="text">
+            <h2>$30B</h2>
+            <p>Digital Currency Exchanged</p>
+          </div>
+        </div>
+        <div class="cont">
+          <img src="img/icon_3.svg" alt="icon" />
+          <div class="text">
+            <h2>10M+</h2>
+            <p>Trusted Wallets Investor</p>
+          </div>
+        </div>
+        <div class="cont">
+          <img src="img/icon_4.svg" alt="icon" />
+          <div class="text">
+            <h2>195</h2>
+            <p>Countries Supported</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quest">
+        <img src="img/Illustration_1.png" alt="videocard" />
+        <div class="info_1">
+          <h2>Why you should choose CRAPPO</h2>
+          <p>
+            Experience the next generation cryptocurrency platform. No financial
+            borders, extra fees, and fake reviews.
+          </p>
+          <a href="" class="but">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trade" id="products">
+      <div class="text_1">
+        <h2>Check how much you can earn</h2>
+        <p>
+          Let’s check your hash rate to see how much you will earn today,
+          Exercitation veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+
+      <div class="calculate">
+        <div class="in">
+          <input type="text" value="Enter your hash rate" id="val" />
+          <select name="val" id="cryptInSec" onchange="select()">
+            <option value="BTC/s">BTC/s</option>
+            <option value="ETH/s">ETH/s</option>
+            <option value="LTC/s">LTC/s</option>
+          </select>
+          <button onclick="calculate()">Calculate</button>
+        </div>
+        <div class="out">
+          <div class="end">ESTIMATED 24 HOUR REVENUE:</div>
+          <span id="res">0$</span>
+          <p>
+            Revenue will change based on mining difficulty and Ethereum price.
+          </p>
+        </div>
+      </div>
+
+      <div class="crypto_cur">
+        <h2>Trade securely and market the high growth cryptocurrencies.</h2>
+        <div class="three_coin">
+          <div class="valute">
+            <img src="img/icon_5.svg" alt="icon" />
+            <h3>Bitcoin<span>BTC</span></h3>
+            <p>
+              One of the most popular digital currencies in which transactions
+              are recorded.
+            </p>
+            <button class="arrow">
+              <img src="img/icon_1_big.png" alt="arrow" />
+              <a href="">
+                <span>Start mining</span>
+                <img src="img/icon_1_min.png" alt="arrow_min" />
+              </a>
+            </button>
+          </div>
+          <div class="valute">
+            <img src="img/icon_6.svg" alt="icon" />
+            <h3>Ethereum<span>ETH</span></h3>
+            <p>
+              Blockchain technology to create and run decentralized digital
+              applications.
+            </p>
+            <button class="arrow">
+              <img src="img/icon_1_big.png" alt="arrow" />
+              <a href="">
+                <span>Start mining</span>
+                <img src="img/icon_1_min.png" alt="arrow_min" />
+              </a>
+            </button>
+          </div>
+          <div class="valute">
+            <img src="img/icon_7.svg" alt="icon" />
+            <h3>Litecoin<span>LTC</span></h3>
+            <p>
+              Cryptocurrency that enables instant payments to anyone in the
+              world.
+            </p>
+            <button class="arrow">
+              <img src="img/icon_1_big.png" alt="arrow" />
+              <a href="">
+                <span>Start mining</span>
+                <img src="img/icon_1_min.png" alt="arrow_min" />
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>
+        Market sentiments, portfolio, and run the infrastructure of your choice
+      </h2>
+      <div class="blocks">
+        <div class="text1">
+          <h3>Invest Smart</h3>
+          <p>
+            Get full statistic information about the behaviour of buyers and
+            sellers will help you to make the decision.
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <img src="img/image_1.png" alt="chart" />
+      </div>
+      <div class="blocks_rev">
+        <div class="text2">
+          <h3>Detailed Statistics</h3>
+          <p>
+            View all mining related information in realtime, at any point at any
+            location and decide which polls you want to mine in.
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <img src="img/image_2.png" alt="statistic" />
+      </div>
+      <div class="blocks">
+        <div class="text3">
+          <h3>Grow your profit and track your investments</h3>
+          <p>
+            Use advanced analytical tools. Clear TradingView charts let you
+            track current and historical profit investments.
+          </p>
+          <a href="">Learn more</a>
+        </div>
+        <img src="img/image_3.png" alt="title" />
+      </div>
+    </section>
+
+    <section class="start" id="contact">
+      <div class="mining">
+        <div class="text_min">
+          <h3>Start mining now</h3>
+          <p>
+            Join now with CRAPPO to get the latest news and start mining now
+          </p>
+        </div>
+        <form action="">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="Enter your email"
+          />
+          <a href="">Subscribe</a>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="up">
+        <a href="" class="logo_min">
+          <img src="img/logo.png" alt="logo" />
+          <span>CRAPPO</span>
+        </a>
+        <div class="nuv">
+          <h4>Quick Link</h4>
+          <ul>
+            <li>
+              <a href="#main">Home</a>
+            </li>
+            <li>
+              <a href="#products">Products</a>
+            </li>
+            <li>
+              <a href="#aboutUs">About</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nuv">
+          <h4>Resources</h4>
+          <ul>
+            <li>
+              <a href="">Download Whitepapper</a>
+            </li>
+            <li>
+              <a href="">Smart Token</a>
+            </li>
+            <li>
+              <a href="">Blockchain Explorer</a>
+            </li>
+            <li>
+              <a href="">Crypto API</a>
+            </li>
+            <li>
+              <a href="">Interest</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pay">
+          <h3>We accept following payment systems</h3>
+          <div class="card">
+            <button>
+              <img src="img/icon_8.svg" alt="visa" />
+            </button>
+            <button>
+              <img src="img/icon_9.svg" alt="masterCard" />
+            </button>
+            <button>
+              <img src="img/icon_10.svg" alt="bitCoin" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="down">
+        <p>©2021 CRAPPO. All rights reserved</p>
+        <div class="socials">
+          <a href="https://facebook.com">
+            <img src="img/1-fIcon.svg" alt="facebook"
+          /></a>
+          <a href="https://instagram.com">
+            <img src="img/2-iIcon.svg" alt="instagram"
+          /></a>
+          <a href="https://youtube.com">
+            <img src="img/3-yIcon.svg" alt="youTube"
+          /></a>
+          <a href="https://twitter.com">
+            <img src="img/4-tIcon.svg" alt="twitter"
+          /></a>
+          <a href="https://linkedin.com">
+            <img src="img/5-lIcon.svg" alt="linkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
